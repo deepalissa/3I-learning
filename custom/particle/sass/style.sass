@@ -1,0 +1,117 @@
+$primary-background-color: #EEE
+$primary-color: #A42988
+$secondary-color: #006AB0
+$font-color: #57475B
+$secondary-background-color: #D6D6D6
+$secondary-font-color: #FEFFFF
+$date-background-color: #006CB6
+$footer-background-color: #D6D6D6
+$border-radius: 10px
+
+body
+  background-color: $primary-background-color
+  line-height: 2em
+
+a
+  color: $primary-color
+
+.navbar-default
+  position: relative
+  background-image: none
+  background-color: transparent
+  box-shadow: none
+  border: none
+
+  .navbar-nav
+    bottom: 0px
+    position: absolute
+    right: 0px
+    & > li
+      & > a
+        color: $primary-color
+.nav
+  & > li
+    & > a
+      padding-top: 0px
+      padding-bottom: 0px
+
+.height-full
+  &:after
+    content: ' '
+    display: block
+    clear: both
+
+.node-links
+  background-color: $secondary-background-color
+  border-radius: $border-radius
+  padding: 15px
+  
+  li
+    list-style: none
+    display: inline
+
+    a
+      color: $secondary-font-color
+      text-transform: uppercase
+      font-weight: bold
+
+    &.node-readmore
+      float: right
+
+.node-date
+  display: table
+  float: left
+
+  .node-date-cell
+    font-weight: bold
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    border-radius: $border-radius
+    width: 60px
+    height: 70px
+    background-color: $date-background-color
+
+    .date
+      color: $secondary-font-color
+      font-size: 2.5em
+
+    .month
+      color: $secondary-font-color
+      font-size: 1.5em
+
+.node-content
+  float: left
+  margin-left: 20px
+  width: calc(100% - 80px)
+
+  h1
+    margin-top: 0px
+
+.node-align
+  margin-top: 70px
+  margin-bottom: 0px
+  &:after
+    content: ' '
+    display: block
+    clear: both
+    height: 3px
+    background-image: url("../images/post-divider.png")
+    background-repeat: no-repeat
+    background-position: right bottom
+    padding-top: 55px
+
+.footer-class
+  background-color: $footer-background-color
+
+.navbar-brand
+  padding-left: 0px
+
+.mini-pager
+  padding: 60px
+  li
+    list-style: none
+    display: inline
+
+    &.mini-pager-right
+      float: right

@@ -1,0 +1,97 @@
+body {
+  background-color: #EEE;
+  line-height: 2em; }
+
+a {
+  color: #A42988; }
+
+.navbar-default {
+  position: relative;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: none; }
+  .navbar-default .navbar-nav {
+    bottom: 0px;
+    position: absolute;
+    right: 0px; }
+    .navbar-default .navbar-nav > li > a {
+      color: #A42988; }
+
+.nav > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.height-full:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.node-links {
+  background-color: #D6D6D6;
+  border-radius: 10px;
+  padding: 15px; }
+  .node-links li {
+    list-style: none;
+    display: inline; }
+    .node-links li a {
+      color: #FEFFFF;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .node-links li.node-readmore {
+      float: right; }
+
+.node-date {
+  display: table;
+  float: left; }
+  .node-date .node-date-cell {
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 10px;
+    width: 60px;
+    height: 70px;
+    background-color: #006CB6; }
+    .node-date .node-date-cell .date {
+      color: #FEFFFF;
+      font-size: 2.5em; }
+    .node-date .node-date-cell .month {
+      color: #FEFFFF;
+      font-size: 1.5em; }
+
+.node-content {
+  float: left;
+  margin-left: 20px;
+  width: calc(100% - 80px); }
+  .node-content h1 {
+    margin-top: 0px; }
+
+.node-align {
+  margin-top: 70px;
+  margin-bottom: 0px; }
+  .node-align:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 3px;
+    background-image: url("../images/post-divider.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-top: 55px; }
+
+.footer-class {
+  background-color: #D6D6D6; }
+
+.navbar-brand {
+  padding-left: 0px; }
+
+.mini-pager {
+  padding: 60px; }
+  .mini-pager li {
+    list-style: none;
+    display: inline; }
+    .mini-pager li.mini-pager-right {
+      float: right; }
+
+/*# sourceMappingURL=style.css.map */
