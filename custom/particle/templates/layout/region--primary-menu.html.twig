@@ -13,11 +13,13 @@
  */
 #}
 {% if content %}
-  <div{{ attributes }}>
-    <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }} class="navbar navbar-default">
-      <div class="container-fluid">
-        {{ content }}
-      </div>
-    </nav>
+  <div class="header-image" >
+    <div{{ attributes}}>
+      <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }} class="navbar navbar-default">
+        <div class="container-fluid">
+          {{ content }}
+        </div>
+      </nav>
+    </div>
   </div>
 {% endif %}

@@ -41,37 +41,42 @@
  */
 #}
 <div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+      <header role="banner">
+        {{ page.header }}
+      </header>
 
-  {{ page.primary_menu }}
+      {{ page.primary_menu }}
 
-  {{ page.breadcrumb }}
+      {{ page.breadcrumb }}
 
-  {{ page.help }}
+      {{ page.help }}
 
-  <main role="main" class="height-full row">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+      <main role="main" class="main-container">
+        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content col-sm-9">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+        <div class="layout-content col-sm-9">
+          {{ page.content }}
+        </div>{# /.layout-content #}
 
-    {% if page.sidebar %}
-      <aside class="layout-sidebar col-sm-3" role="complementary">
-        {{ page.sidebar }}
-      </aside>
-    {% endif %}
+        {% if page.sidebar %}
+          <aside class="layout-sidebar col-sm-3 sidebar img-responsive" role="complementary">
+            {{ page.sidebar }}
+            
+          </aside>
+        {% endif %}
+        <div style="clear:both"></div>
+      </main>
 
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
+      <footer role="contentinfo" class="col-sm-12 footer-class ">
+        {{ page.footer }}
+        <a id="back-to-top" href="#" class="footer-link"
+        role="button" title="Back to Top" data-toggle="tooltip" data-placement="top">
+        Back to top
+        </a>
+      </footer>
+    </div>
+  </div>
 </div>{# /.layout-container #}

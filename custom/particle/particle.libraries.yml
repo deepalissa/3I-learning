@@ -7,4 +7,6 @@ baseparticle:
   js:
     js/bootstrap.min.js: {}
     js/footer-js.js: {}
+  dependencies:
+    - core/jquery
 

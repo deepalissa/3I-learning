@@ -2,18 +2,48 @@ $primary-background-color: #EEE
 $primary-color: #A42988
 $secondary-color: #006AB0
 $font-color: #57475B
-$secondary-background-color: #D6D6D6
+$secondary-background-color: #DDD
 $secondary-font-color: #FEFFFF
 $date-background-color: #006CB6
-$footer-background-color: #D6D6D6
+$footer-background-color: #E9E9E9
 $border-radius: 10px
+$sidebar-image-background-color : #FFF
+$breakpoint-tablet: 768px
+$node-comment-border-color: #BBB
+$node-comment-footer-color: #9C99A2
+$button-background-color: #CCC
+
+html
+  height: 100%
 
 body
   background-color: $primary-background-color
   line-height: 2em
+  height: 100%
 
 a
   color: $primary-color
+  &:hover
+    text-decoration: none
+
+blockquote
+  font-size: 1em
+  font-weight: bold
+  font-style: italic
+  border: none
+  &::before,
+  &::after
+    content: '"'
+
+.header-image
+  background-image: url("../images/body-bg.jpg")
+  background-repeat: no-repeat
+  padding-top: 135px
+  padding-bottom: 35px
+  background-position: top center
+
+.navbar
+  margin-bottom: 0px
 
 .navbar-default
   position: relative
@@ -29,17 +59,12 @@ a
     & > li
       & > a
         color: $primary-color
+        font-weight: bold
 .nav
   & > li
     & > a
       padding-top: 0px
       padding-bottom: 0px
-
-.height-full
-  &:after
-    content: ' '
-    display: block
-    clear: both
 
 .node-links
   background-color: $secondary-background-color
@@ -57,12 +82,15 @@ a
 
     &.node-readmore
       float: right
+  li:not(.node-readmore)+li
+    margin-left: 20px
 
 .node-date
   display: table
   float: left
 
   .node-date-cell
+    line-height: 20px
     font-weight: bold
     display: table-cell
     vertical-align: middle
@@ -75,6 +103,7 @@ a
     .date
       color: $secondary-font-color
       font-size: 2.5em
+      padding-top: 20px
 
     .month
       color: $secondary-font-color
@@ -82,11 +111,19 @@ a
 
 .node-content
   float: left
-  margin-left: 20px
   width: calc(100% - 80px)
+  padding: 0 20px
 
   h1
     margin-top: 0px
+    font-weight: bold
+    font-size: 1.5em
+
+  img
+    padding: 5px
+    background-color: $sidebar-image-background-color
+    margin: 10px
+    max-width: 100%
 
 .node-align
   margin-top: 70px
@@ -101,8 +138,131 @@ a
     background-position: right bottom
     padding-top: 55px
 
+.node-comment
+  background-color: $secondary-background-color
+  border-color: $node-comment-border-color
+  border-width: 1px
+  border-style: solid
+  padding: 10px
+  margin-bottom: 20px
+
+  footer
+    float: right
+    color: $node-comment-footer-color
+  
+  .node-links
+    padding: 0px
+
+    a
+      color: $primary-color
+      font-weight: unset
+      text-transform: unset
+      font-size: 1.2em
+
+  h3
+    font-size: 1.3em
+    font-weight: bold
+    margin-top: 5px
+
+  ul
+    margin-bottom: 0px
+
+.comment-heading
+  h2
+    font-size: 1.5em
+    font-weight: bold
+    color: $primary-color
+    margin-bottom: 20px
+
+.node-save-button
+  border-radius: 0px
+  color: $secondary-font-color
+  background-color: $button-background-color
+  margin-top: 10px
+  background-image: none
+  border: none
+
+.layout-content
+  background-image: url("../images/post-divider.png")
+  background-repeat: no-repeat
+  background-position: right top
+
+.layout-sidebar
+  position: relative
+
+.sidebar
+  img
+    width: 100%
+    padding: 5px
+    background-color: $sidebar-image-background-color
+    margin-top: 20px
+
+  background-color: $secondary-background-color
+  border-top-right-radius: $border-radius
+  border-bottom-right-radius: $border-radius
+
+  h2
+    color: $secondary-font-color
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 20px
+    padding-top: 16px
+
+  nav
+    margin-top: 10px
+
+    ul
+      padding: 0px
+
+    li
+      list-style: none
+      font-weight: bold
+      background-image: url("../images/sidebar-btn.png")
+      background-repeat: no-repeat
+      text-align: center
+      padding: 12px
+      background-position: center
+      
+.social-icons
+  img
+    display: inline
+    width: auto
+    background: none
+    padding: 2px
+    margin-top: 0px
+
+.sidebar-search
+  form
+    background-image: url("../images/search-bar.png")
+    background-repeat: no-repeat
+    padding: 1px
+    background-size: 100% 100%
+
+    div
+      display: inline
+
+    .form-search
+      border: none
+      background: transparent
+      display: inline
+      width: calc(100% - 40px)
+      box-shadow: none
+
+    .button
+      background: transparent
+      border: none
+      width: 30px
+      background-image: url("../images/search-btn.png")
+      background-repeat: no-repeat
+      color: transparent
+      box-shadow: none
+      text-shadow: none
+
 .footer-class
   background-color: $footer-background-color
+
+  .footer-link
+    float: right
 
 .navbar-brand
   padding-left: 0px
@@ -115,3 +275,59 @@ a
 
     &.mini-pager-right
       float: right
+
+.main-container
+  display: table
+
+  .layout-content
+    display: table-cell
+    float: none
+    padding: 0px
+
+  .layout-sidebar
+    display: table-cell
+    float: none
+    vertical-align: top
+
+@media (max-width: $breakpoint-tablet) 
+  .main-container
+    display: block
+
+    .layout-content
+      display: block
+
+    .layout-sidebar
+      display: block
+
+  .navbar-default
+    .navbar-nav
+      position: static
+
+  .mini-pager
+    padding: 0px
+
+  .node-links 
+    padding: 27px
+
+    li
+      display: block
+      clear: both
+
+      &.node-readmore
+        float: none
+      
+    li:not(.node-readmore)+li
+      margin-left: 0px
+
+  .node-content 
+    width: calc(100% - 30px)
+
+  .node-date
+    .node-date-cell
+      line-height: 1.5em
+      width: 30px
+      height: 45px
+      font-size: 8px
+  
+  .header-image
+    margin: 0 -15px
