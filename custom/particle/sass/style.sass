@@ -122,8 +122,18 @@ blockquote
   img
     padding: 5px
     background-color: $sidebar-image-background-color
-    margin: 10px
     max-width: 100%
+    border: 1px solid $secondary-background-color
+
+    &.align-left
+      margin: 5px 10px 5px 0px
+
+    &.align-right
+      margin: 10px 0px 5px 10px
+
+    &.align-center
+      margin-top: 5px
+      margin-bottom: 5px
 
 .node-align
   margin-top: 70px
@@ -196,6 +206,7 @@ blockquote
     padding: 5px
     background-color: $sidebar-image-background-color
     margin-top: 20px
+    border: 1px solid $secondary-background-color
 
   background-color: $secondary-background-color
   border-top-right-radius: $border-radius
@@ -217,12 +228,12 @@ blockquote
     li
       list-style: none
       font-weight: bold
-      background-image: url("../images/sidebar-btn.png")
-      background-repeat: no-repeat
       text-align: center
-      padding: 12px
-      background-position: center
-      
+      background-color: $primary-background-color
+      border-radius: 10px
+      margin: 10px 0px
+      padding: 7px
+
 .social-icons
   img
     display: inline
@@ -233,9 +244,8 @@ blockquote
 
 .sidebar-search
   form
-    background-image: url("../images/search-bar.png")
-    background-repeat: no-repeat
-    padding: 1px
+    background-color: $primary-background-color
+    border-radius: 10px
     background-size: 100% 100%
 
     div
@@ -331,3 +341,7 @@ blockquote
   
   .header-image
     margin: 0 -15px
+  
+  .node-comment
+    footer
+      float: none

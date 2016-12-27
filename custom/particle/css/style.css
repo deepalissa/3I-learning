@@ -95,8 +95,15 @@ blockquote {
   .node-content img {
     padding: 5px;
     background-color: #FFF;
-    margin: 10px;
-    max-width: 100%; }
+    max-width: 100%;
+    border: 1px solid #DDD; }
+    .node-content img.align-left {
+      margin: 5px 10px 5px 0px; }
+    .node-content img.align-right {
+      margin: 10px 0px 5px 10px; }
+    .node-content img.align-center {
+      margin-top: 5px;
+      margin-bottom: 5px; }
 
 .node-align {
   margin-top: 70px;
@@ -165,7 +172,8 @@ blockquote {
     width: 100%;
     padding: 5px;
     background-color: #FFF;
-    margin-top: 20px; }
+    margin-top: 20px;
+    border: 1px solid #DDD; }
   .sidebar h2 {
     color: #FEFFFF;
     text-transform: uppercase;
@@ -179,11 +187,11 @@ blockquote {
     .sidebar nav li {
       list-style: none;
       font-weight: bold;
-      background-image: url("../images/sidebar-btn.png");
-      background-repeat: no-repeat;
       text-align: center;
-      padding: 12px;
-      background-position: center; }
+      background-color: #EEE;
+      border-radius: 10px;
+      margin: 10px 0px;
+      padding: 7px; }
 
 .social-icons img {
   display: inline;
@@ -193,9 +201,8 @@ blockquote {
   margin-top: 0px; }
 
 .sidebar-search form {
-  background-image: url("../images/search-bar.png");
-  background-repeat: no-repeat;
-  padding: 1px;
+  background-color: #EEE;
+  border-radius: 10px;
   background-size: 100% 100%; }
   .sidebar-search form div {
     display: inline; }
@@ -276,6 +283,9 @@ blockquote {
     font-size: 8px; }
 
   .header-image {
-    margin: 0 -15px; } }
+    margin: 0 -15px; }
+
+  .node-comment footer {
+    float: none; } }
 
 /*# sourceMappingURL=style.css.map */
