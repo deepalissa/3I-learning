@@ -41,6 +41,7 @@ blockquote
   padding-top: 135px
   padding-bottom: 35px
   background-position: top center
+  background-size: contain
 
 .navbar
   margin-bottom: 0px
@@ -70,6 +71,10 @@ blockquote
   background-color: $secondary-background-color
   border-radius: $border-radius
   padding: 15px
+  &::before
+    display: block
+    clear: both
+    content: ' '
   
   li
     list-style: none
@@ -316,6 +321,10 @@ blockquote
 
   .mini-pager
     padding: 0px
+  
+  .node-align
+    margin-top: 10px
+    padding-top: 20px
 
   .node-links 
     padding: 27px
@@ -342,6 +351,8 @@ blockquote
   
   .header-image
     margin: 0 -15px
+    padding-bottom : 5px
+    padding-top: 40px
   
   .node-comment
     footer
