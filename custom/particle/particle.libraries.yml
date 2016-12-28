@@ -9,4 +9,3 @@ baseparticle:
     js/footer-js.js: {}
   dependencies:
     - core/jquery
-

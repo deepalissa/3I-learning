@@ -1,5 +1,10 @@
+/**
+ * @file
+ * Js for adjusting page scroll.
+ */
+
 jQuery(function ($){
-        // scroll body to 0px on click
+        // Scroll body to 0px on click.
         $('#back-to-top').click(function () {
             $('#back-to-top').tooltip('hide');
             $('body,html').animate({
@@ -7,5 +12,4 @@ jQuery(function ($){
             }, 800);
             return false;
         });
-        
 });
