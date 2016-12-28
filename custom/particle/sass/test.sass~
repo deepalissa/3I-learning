@@ -1,5 +1,0 @@
-$color:#abb;
-
-body {
-  color:$color;
-}
