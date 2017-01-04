@@ -85,6 +85,8 @@ body {
     margin-top: 0px; }
   .layout-sidebar-first .block-align + .block-align {
     margin-top: 20px; }
+  .layout-sidebar-first .node-save-button {
+    margin-bottom: 0px; }
 
 .layout-sidebar-second {
   padding-bottom: 30px;
@@ -101,6 +103,8 @@ body {
     list-style: none; }
   .layout-sidebar-second .block-align {
     margin-bottom: 30px; }
+  .layout-sidebar-second .node-save-button {
+    margin-bottom: 0px; }
 
 .layout-content {
   font-size: 18px;
@@ -139,7 +143,9 @@ body {
     .layout-content img.align-center {
       margin-top: 5px;
       margin-bottom: 5px;
-      float: none; }
+      float: none;
+      margin-left: auto;
+      margin-right: auto; }
 
 .node-links {
   padding: 0px;
