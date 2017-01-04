@@ -19,7 +19,7 @@ body {
   background-color: #428BCA; }
 
 .navbar {
-  min-height: 0px;
+  min-height: 10px;
   border: none;
   margin-bottom: 0px; }
 
@@ -72,12 +72,6 @@ body {
 .layout-sidebar img {
   width: 100%; }
 
-.layout-sidebar-first .block-align + .block-align {
-  margin-top: 20px; }
-
-.layout-sidebar-second .block-align {
-  margin-bottom: 30px; }
-
 .layout-sidebar-first {
   background-color: #F5F5F5;
   padding: 15px;
@@ -89,6 +83,8 @@ body {
     font-weight: normal;
     color: #333333;
     margin-top: 0px; }
+  .layout-sidebar-first .block-align + .block-align {
+    margin-top: 20px; }
 
 .layout-sidebar-second {
   padding-bottom: 30px;
@@ -103,6 +99,8 @@ body {
     padding-left: 0px; }
   .layout-sidebar-second li {
     list-style: none; }
+  .layout-sidebar-second .block-align {
+    margin-bottom: 30px; }
 
 .layout-content {
   font-size: 18px;
