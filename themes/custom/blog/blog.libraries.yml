@@ -1,0 +1,10 @@
+baseblog:
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+      css/bootstrap-theme.min.css: {}
+      css/blog-style.css: {}
+  js:
+    js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
