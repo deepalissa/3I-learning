@@ -12,8 +12,11 @@ body {
   font-size: 15px;
   padding-bottom: 20px; }
 
-.form-description p {
-  font-size: 15px; }
+.form-class {
+  padding-top: 10px;
+  padding-bottom: 15px; }
+  .form-class p {
+    font-size: 15px; }
 
 .nav-blue {
   background-color: #428BCA; }
@@ -229,7 +232,7 @@ body {
   display: block;
   clear: both; }
 
-legend {
+fieldset {
   margin-top: 20px;
   margin-bottom: 5px; }
 

@@ -31,7 +31,10 @@ body {
   padding-bottom: 20px;
 }
 
-.form-description {
+.form-class {
+  padding-top: 10px;
+  padding-bottom: 15px;
+
   p {
     font-size: 15px;
   }
@@ -350,7 +353,7 @@ body {
   }
 }
 
-legend {
+fieldset {
   margin-top: 20px;
   margin-bottom: 5px;
 }
